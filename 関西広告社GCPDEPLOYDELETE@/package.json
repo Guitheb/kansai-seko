@@ -1,0 +1,20 @@
+{
+  "name": "cloud-run-sql-kintone",
+  "version": "1.0.0",
+  "description": "ローカル環境で Cloud SQL SQL Server に接続し、Kintone へ upsert するサンプルアプリ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@kintone/rest-api-client": "^5.7.1",
+    "@google-cloud/cloud-sql-connector": "^1.6.1",
+    "axios": "^0.21.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "mssql": "^11.0.1",
+    "tedious": "18.6.1",
+    "luxon": "^3.5.0"
+  }
+}
+
