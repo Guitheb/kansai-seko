@@ -580,10 +580,3 @@ app.get('/recover', requireAuth, async (req, res) => {
 app.listen(PORT, () => {
   console.log(`サーバー起動: ポート ${PORT}`);
 });
-/*
-gcloud run deploy patch `
->>   --image gcr.io/sekonippou/patch:latest `
->>   --platform managed `
->>   --region asia-northeast2 `
->>   --allow-unauthenticated `
->>   --set-env-vars "DB_USER=fujiyagouser,DB_PASSWORD=fujiyagofujiyago,DB_NAME=SekouSiji,INSTANCE_CONNECTION_NAME=sekonippou:asia-northeast1:seko-sandbox,KINTONE_DOMAIN=kansai-seko,KINTONE_APP_ID=34,KINTONE_API_TOKEN=fFe4LVZFm8BGcZEjcjYZDgvvkCmd6uouUz4goR4T,SYAIN_API_TOKEN=HhOJpvxLb7iSPviU3A4iFlbidEbiW7D1E6ElhYw2,APP_SECRET_PASS=kansai-seko"*/
